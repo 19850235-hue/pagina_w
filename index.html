@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forza Horizon 5 | Ruta del Horizonte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progreso" id="progreso"></div>
+  <div class="route-line" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav__brand">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M4 2v20h2v-7.5l1.5-.5c1.5-.5 3-.5 4.5 0s3 .5 4.5 0L18 13V4l-1.5.5c-1.5.5-3 .5-4.5 0s-3-.5-4.5 0L6 5V2H4z"/>
+      </svg>
+      FH5<span>·</span>Horizon
+    </div>
+    <nav id="navLinks">
+      <a href="#inicio"><span class="nav__mark">01</span> Inicio</a>
+      <a href="#el-juego"><span class="nav__mark">02</span> El Juego</a>
+      <a href="#historia"><span class="nav__mark">03</span> Historia</a>
+      <a href="#garage"><span class="nav__mark">04</span> Garage</a>
+      <a href="#multimedia"><span class="nav__mark">05</span> Multimedia</a>
+      <a href="#desarrollador"><span class="nav__mark">06</span> Equipo</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <div class="hero__texto">
+        <div class="checkpoint">CHECKPOINT 01 · INICIO</div>
+        <h1>Bienvenido a la <span>Ruta del Horizonte</span></h1>
+        <p class="hero__lead">
+          Este sitio está dedicado a <strong>Forza Horizon 5</strong>, el videojuego de carreras
+          de mundo abierto desarrollado por Playground Games y publicado por Xbox Game Studios.
+          Ambientado en una versión vibrante de México, combina exploración, velocidad y una
+          colección masiva de vehículos en un mapa lleno de volcanes, selvas, playas y ciudades.
+        </p>
+        <p class="hero__lead">
+          Elegí este juego para el proyecto porque combina algo que me gusta —los autos y la
+          velocidad— con un mundo abierto lleno de detalles, y me pareció un buen pretexto para
+          practicar HTML5 y CSS con una temática que disfruto.
+        </p>
+
+        <a href="#garage" class="hero__cta">🏁 Explorar el Garage</a>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="stat__num" data-conteo="2021">0</span>
+            <span class="stat__label">Año de lanzamiento</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-conteo="500" data-sufijo="+">0</span>
+            <span class="stat__label">Autos disponibles</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">🇲🇽</span>
+            <span class="stat__label">Ambientado en México</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-conteo="4">0</span>
+            <span class="stat__label">Estaciones del año</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__collage" aria-hidden="true">
+        <img src="lambo.jpg" alt="">
+        <img src="evo.jpg" alt="">
+        <img src="sesto.jpg" alt="">
+      </div>
+    </section>
+
+    <section id="el-juego" class="juego reveal">
+      <div class="checkpoint">CHECKPOINT 02 · EL JUEGO</div>
+      <h2>Sobre Forza Horizon 5</h2>
+      <p class="juego__lead">
+        Forza Horizon 5 te lleva al Horizon Festival, un evento de carreras y música ambientado
+        en un México ficticio pero increíblemente detallado: volcanes activos, selvas tropicales,
+        pueblos coloniales, playas y hasta zonas desérticas conviven en un mismo mapa abierto que
+        puedes explorar libremente, sin cargas entre zonas.
+      </p>
+      <p class="juego__lead">
+        Más allá de las carreras, el juego premia la exploración: hay tableros publicitarios para
+        destruir, saltos y radares escondidos por todo el mapa, y una campaña dividida en
+        expediciones temáticas que te llevan por distintas regiones a tu propio ritmo.
+      </p>
+
+      <div class="feature-grid">
+        <div class="feature reveal">
+          <span class="feature__icono">🌎</span>
+          <h3>Mundo abierto sin cargas</h3>
+          <p>Un mapa continuo de más de 750 km² que puedes recorrer libremente en cualquier vehículo.</p>
+        </div>
+        <div class="feature reveal">
+          <span class="feature__icono">🍂</span>
+          <h3>Estaciones dinámicas</h3>
+          <p>El clima cambia cada semana en el modo online: lluvias, calor extremo o inundaciones que alteran las rutas.</p>
+        </div>
+        <div class="feature reveal">
+          <span class="feature__icono">🎨</span>
+          <h3>Personalización profunda</h3>
+          <p>Pintura, calcomanías, mejoras de rendimiento y ajustes de suspensión para cada auto de tu garage.</p>
+        </div>
+        <div class="feature reveal">
+          <span class="feature__icono">🛠️</span>
+          <h3>EventLab</h3>
+          <p>Un editor que permite crear tus propios desafíos, minijuegos y carreras para compartir con la comunidad.</p>
+        </div>
+        <div class="feature reveal">
+          <span class="feature__icono">🤝</span>
+          <h3>Multijugador y Convoy</h3>
+          <p>Explora el mapa en línea con amigos, participa en carreras compartidas o une fuerzas en el modo Convoy.</p>
+        </div>
+        <div class="feature reveal">
+          <span class="feature__icono">📸</span>
+          <h3>Modo Forzavista</h3>
+          <p>Un modo fotográfico para explorar cada auto en detalle y tomar capturas dignas de una revista.</p>
+        </div>
+      </div>
+
+      <div class="ediciones">
+        <h3>Ediciones del juego</h3>
+        <ul class="ediciones__lista">
+          <li><strong>Standard</strong> — el juego base con acceso a todo el mapa y la campaña principal.</li>
+          <li><strong>Deluxe</strong> — incluye el Car Pass con autos adicionales durante el año.</li>
+          <li><strong>Premium</strong> — suma las expansiones <em>Hot Wheels</em> y <em>Rally Adventure</em>, además de acceso anticipado.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="historia" class="historia reveal">
+      <div class="checkpoint">CHECKPOINT 03 · HISTORIA</div>
+      <h2>Detrás del Horizon Festival</h2>
+      <p class="historia__lead">
+        Un vistazo al estudio que lo creó, cómo evolucionó la saga a lo largo de los años y algunos
+        datos curiosos que muchos jugadores pasan por alto.
+      </p>
+
+      <div class="studio-card reveal">
+        <div class="studio-card__marca">PG</div>
+        <div class="studio-card__texto">
+          <h3>Playground Games</h3>
+          <p>
+            El estudio británico <strong>Playground Games</strong> fue fundado en 2010 en
+            Royal Leamington Spa, Inglaterra, por un grupo de exdesarrolladores de Bizarre Creations
+            (los creadores de Project Gotham Racing). Desde 2012 se especializan en la saga
+            <em>Forza Horizon</em>, y en 2018 pasaron a formar parte de Xbox Game Studios. Además de
+            la serie Horizon, el estudio también trabaja en el desarrollo de un nuevo título de
+            <em>Fable</em>.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="linea-tiempo__titulo">Línea de tiempo de la saga</h3>
+      <ol class="linea-tiempo">
+        <li class="linea-tiempo__item reveal">
+          <span class="linea-tiempo__anio">2012</span>
+          <div class="linea-tiempo__info">
+            <h4>Forza Horizon</h4>
+            <p>El primer juego de la subsaga, ambientado en un festival ficticio en Colorado, EE.UU.</p>
+          </div>
+        </li>
+        <li class="linea-tiempo__item reveal">
+          <span class="linea-tiempo__anio">2014</span>
+          <div class="linea-tiempo__info">
+            <h4>Forza Horizon 2</h4>
+            <p>El festival se traslada a Europa, recorriendo el sur de Francia e Italia.</p>
+          </div>
+        </li>
+        <li class="linea-tiempo__item reveal">
+          <span class="linea-tiempo__anio">2016</span>
+          <div class="linea-tiempo__info">
+            <h4>Forza Horizon 3</h4>
+            <p>Primera entrega ambientada en Australia, con playas, selvas y el interior desértico.</p>
+          </div>
+        </li>
+        <li class="linea-tiempo__item reveal">
+          <span class="linea-tiempo__anio">2018</span>
+          <div class="linea-tiempo__info">
+            <h4>Forza Horizon 4</h4>
+            <p>Ubicada en Gran Bretaña, introdujo las estaciones dinámicas que cambian el mapa cada semana.</p>
+          </div>
+        </li>
+        <li class="linea-tiempo__item reveal">
+          <span class="linea-tiempo__anio">2021</span>
+          <div class="linea-tiempo__info">
+            <h4>Forza Horizon 5</h4>
+            <p>El festival llega a México, con el mapa más grande y variado de la saga hasta la fecha.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="secretos__titulo">Curiosidades y secretos</h3>
+      <div class="secretos-grid">
+        <div class="secreto reveal">
+          <span class="secreto__icono">🌋</span>
+          <h4>El volcán es real</h4>
+          <p>El volcán del mapa está inspirado en el Nevado de Colima, uno de los puntos más altos de México.</p>
+        </div>
+        <div class="secreto reveal">
+          <span class="secreto__icono">🚗</span>
+          <h4>Barn Finds</h4>
+          <p>Hay autos clásicos escondidos por el mapa dentro de graneros abandonados, listos para ser restaurados.</p>
+        </div>
+        <div class="secreto reveal">
+          <span class="secreto__icono">📈</span>
+          <h4>Récord de lanzamiento</h4>
+          <p>FH5 tuvo el lanzamiento más grande en la historia de Xbox Game Studios, con más de 6 millones de jugadores en su primera semana.</p>
+        </div>
+        <div class="secreto reveal">
+          <span class="secreto__icono">🎡</span>
+          <h4>Hot Wheels a escala gigante</h4>
+          <p>La expansión Hot Wheels agrega pistas naranjas suspendidas en el aire, como los circuitos de juguete reales.</p>
+        </div>
+        <div class="secreto reveal">
+          <span class="secreto__icono">📻</span>
+          <h4>Estaciones de radio temáticas</h4>
+          <p>Cada estación de radio tiene su propio género y hasta su propio locutor con personalidad distinta.</p>
+        </div>
+        <div class="secreto reveal">
+          <span class="secreto__icono">🛠️</span>
+          <h4>Mismo motor que Forza Motorsport</h4>
+          <p>Usa una versión adaptada del motor gráfico ForzaTech, compartido con la serie de simulación Forza Motorsport.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="garage" class="garage reveal">
+      <div class="checkpoint">CHECKPOINT 04 · GARAGE</div>
+      <h2>Algunos autos del Horizon Festival</h2>
+      <p class="garage__lead">Una pequeña muestra de mis autos favoritos de entre los cientos que puedes coleccionar y personalizar en Forza Horizon 5.</p>
+
+      <div class="garage__grid">
+        <figure class="garage__card reveal">
+          <img src="evo.jpg" alt="Auto Evo en Forza Horizon 5" class="garage__img" data-nombre="Evo">
+          <figcaption>
+            Evo
+            <span class="garage__ficha">Rally · ágil y perfecto para tierra</span>
+          </figcaption>
+          <ul class="garage__specs">
+            <li><span>Categoría</span><strong>Rally / Todo terreno</strong></li>
+            <li><span>Tracción</span><strong>Integral (AWD)</strong></li>
+            <li><span>Vel. máx. aprox.</span><strong>250 km/h</strong></li>
+          </ul>
+        </figure>
+        <figure class="garage__card reveal">
+          <img src="lambo.jpg" alt="Auto Lambo en Forza Horizon 5" class="garage__img" data-nombre="Lambo">
+          <figcaption>
+            Lambo
+            <span class="garage__ficha">Hypercar · velocidad punta impresionante</span>
+          </figcaption>
+          <ul class="garage__specs">
+            <li><span>Categoría</span><strong>Hypercar</strong></li>
+            <li><span>Tracción</span><strong>Trasera / Integral (según modelo)</strong></li>
+            <li><span>Vel. máx. aprox.</span><strong>350 km/h</strong></li>
+          </ul>
+        </figure>
+        <figure class="garage__card reveal">
+          <img src="sesto.jpg" alt="Auto Sesto en Forza Horizon 5" class="garage__img" data-nombre="Sesto">
+          <figcaption>
+            Sesto
+            <span class="garage__ficha">Deportivo · diseño ligero y aerodinámico</span>
+          </figcaption>
+          <ul class="garage__specs">
+            <li><span>Categoría</span><strong>Superdeportivo</strong></li>
+            <li><span>Construcción</span><strong>Fibra de carbono, muy ligero</strong></li>
+            <li><span>Vel. máx. aprox.</span><strong>340 km/h</strong></li>
+          </ul>
+        </figure>
+        <figure class="garage__card reveal">
+          <img src="Hennessey_Venom.webp" alt="Hennessey Venom en Forza Horizon 5" class="garage__img" data-nombre="Hennessey Venom" onerror="this.style.display='none'; this.parentElement.classList.add('garage__card--vacio')">
+          <figcaption>
+            Hennessey Venom
+            <span class="garage__ficha">Hypercar americano · hecho para la velocidad máxima</span>
+          </figcaption>
+          <ul class="garage__specs">
+            <li><span>Categoría</span><strong>Hypercar</strong></li>
+            <li><span>Tracción</span><strong>Trasera (RWD)</strong></li>
+            <li><span>Vel. máx. aprox.</span><strong>435 km/h</strong></li>
+          </ul>
+        </figure>
+        <figure class="garage__card reveal">
+          <img src="impopular.jpg" alt="Quinto auto de la colección" class="garage__img" data-nombre="Auto 5" onerror="this.style.display='none'; this.parentElement.classList.add('garage__card--vacio')">
+          <figcaption>
+            Auto 5
+            <span class="garage__ficha">Agrega el nombre y tipo de este auto</span>
+          </figcaption>
+          <ul class="garage__specs">
+            <li><span>Categoría</span><strong>Agrega la categoría</strong></li>
+            <li><span>Tracción</span><strong>Agrega la tracción</strong></li>
+            <li><span>Vel. máx. aprox.</span><strong>Agrega el dato</strong></li>
+          </ul>
+        </figure>
+        <figure class="garage__card reveal">
+          <img src="koenigsegg jesko.jpg" alt="Koenigsegg Jesko en Forza Horizon 5" class="garage__img" data-nombre="Koenigsegg Jesko" onerror="this.style.display='none'; this.parentElement.classList.add('garage__card--vacio')">
+          <figcaption>
+            Koenigsegg Jesko
+            <span class="garage__ficha">Hypercar sueco · aerodinámica extrema</span>
+          </figcaption>
+          <ul class="garage__specs">
+            <li><span>Categoría</span><strong>Hypercar</strong></li>
+            <li><span>Tracción</span><strong>Trasera (RWD)</strong></li>
+            <li><span>Vel. máx. aprox.</span><strong>480 km/h (teórica)</strong></li>
+          </ul>
+        </figure>
+        <figure class="garage__card reveal">
+          <img src="Mercedes-AMG.jpg" alt="Mercedes-AMG en Forza Horizon 5" class="garage__img" data-nombre="Mercedes-AMG" onerror="this.style.display='none'; this.parentElement.classList.add('garage__card--vacio')">
+          <figcaption>
+            Mercedes-AMG
+            <span class="garage__ficha">Deportivo de lujo · potencia y elegancia alemana</span>
+          </figcaption>
+          <ul class="garage__specs">
+            <li><span>Categoría</span><strong>Deportivo de lujo</strong></li>
+            <li><span>Tracción</span><strong>Trasera (RWD)</strong></li>
+            <li><span>Vel. máx. aprox.</span><strong>318 km/h</strong></li>
+          </ul>
+        </figure>
+      </div>
+    </section>
+
+    <section id="multimedia" class="multimedia reveal">
+      <div class="checkpoint">CHECKPOINT 05 · MULTIMEDIA</div>
+      <h2>Videos del juego</h2>
+      <p class="multimedia__lead">Tráiler oficial y un segundo video con gameplay o reseña del juego.</p>
+
+      <div class="multimedia__grid">
+        <div class="video-wrap">
+          <p class="video-wrap__caption">Tráiler oficial de lanzamiento</p>
+          <div class="video-frame">
+            <video src="trailer.mp4" controls preload="metadata" poster="video-poster.jpg">
+              Tu navegador no soporta la reproducción de este video.
+            </video>
+          </div>
+        </div>
+
+        <div class="video-wrap">
+          <p class="video-wrap__caption">Gameplay y exploración de México</p>
+          <div class="video-frame">
+            <video src="guia.mp4" controls preload="metadata" poster="gameplay-poster.jpg">
+              Tu navegador no soporta la reproducción de este video.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="desarrollador" class="dev reveal">
+      <div class="checkpoint">CHECKPOINT 06 · EQUIPO</div>
+      <h2>Sobre los desarrolladores del sitio</h2>
+
+      <div class="dev__card reveal">
+        <div class="dev__photo">
+          <img src="esau.jpeg" alt="Foto del estudiante" onerror="this.style.display='none'; this.parentElement.classList.add('dev__photo--empty')">
+        </div>
+        <div class="dev__info">
+          <h3>Adriel Esaú Valle Sánchez</h3>
+          <p>
+            Estudiante de desarrollo de software, apasionado por la creación de código y la
+            programación, con ganas de aprender y mejorar cada día, y de poder ser reconocido
+            como uno de los mejores programadores. Busco ganar experiencia y explotar mis
+            habilidades al máximo nivel.
+          </p>
+          <p class="dev__aporte"><strong>Aporte al proyecto:</strong> estructura HTML, estilos CSS y la funcionalidad del sitio (galería, lightbox y navegación).</p>
+        </div>
+      </div>
+
+      <div class="dev__card reveal">
+        <div class="dev__photo">
+          <img src="img/foto-companero.jpg" alt="Foto del otro desarrollador" onerror="this.style.display='none'; this.parentElement.classList.add('dev__photo--empty')">
+        </div>
+        <div class="dev__info">
+          <h3>Mena de La Cruz Misael Ezequiel</h3>
+          <p>
+            Un estudiante de desarrollo de software, con ideas muy buenas y con ganas de aprender para hacer códigos a su manera y a su antojo.
+          </p>
+          <p class="dev__aporte"><strong>Aporte al proyecto:</strong> ideas del diseño de la página web y la ayuda a subir el archivo a GitHub.</p>
+        </div>
+      </div>
+
+      <div class="dev__card reveal">
+        <div class="dev__photo">
+          <img src="img/foto-companero-2.jpg" alt="Foto del tercer desarrollador" onerror="this.style.display='none'; this.parentElement.classList.add('dev__photo--empty')">
+        </div>
+        <div class="dev__info">
+          <h3>Melara Rivera Salvador Alirio</h3>
+          <p>
+            Alguien con mucha capacidad y grandes características para esta carrera de desarrollo de software.
+          </p>
+          <p class="dev__aporte"><strong>Aporte al proyecto:</strong> buscar los videos e imágenes y el estilo que llevarían.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__cerrar" id="lightboxCerrar" aria-label="Cerrar imagen">✖</button>
+    <img src="" alt="" id="lightboxImg" class="lightbox__img">
+    <p class="lightbox__nombre" id="lightboxNombre"></p>
+  </div>
+
+  <footer class="footer">
+    <p>Sitio creado como preparación para el proyecto de HTML5 y CSS · Módulo de desarrollo de software.</p>
+    <p>Código hecho tomando tutoriales y clases del módulo.</p>
+  </footer>
+
+  <script>
+    const imagenes = document.querySelectorAll('.garage__img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxNombre = document.getElementById('lightboxNombre');
+    const lightboxCerrar = document.getElementById('lightboxCerrar');
+
+    imagenes.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxNombre.textContent = img.dataset.nombre || '';
+        lightbox.classList.add('activo');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function cerrarLightbox() {
+      lightbox.classList.remove('activo');
+      lightboxImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    lightboxCerrar.addEventListener('click', cerrarLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) cerrarLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') cerrarLightbox();
+    });
+
+    // Barra de progreso de scroll
+    const progreso = document.getElementById('progreso');
+    function actualizarProgreso() {
+      const alto = document.documentElement.scrollHeight - window.innerHeight;
+      const avance = alto > 0 ? (window.scrollY / alto) * 100 : 0;
+      progreso.style.width = avance + '%';
+    }
+    window.addEventListener('scroll', actualizarProgreso);
+    actualizarProgreso();
+
+    // Resaltar el enlace activo del menú según la sección visible
+    const secciones = document.querySelectorAll('main section[id]');
+    const enlaces = document.querySelectorAll('#navLinks a');
+    const observerNav = new IntersectionObserver((entradas) => {
+      entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+          enlaces.forEach(a => a.classList.remove('activo'));
+          const activo = document.querySelector(`#navLinks a[href="#${entrada.target.id}"]`);
+          if (activo) activo.classList.add('activo');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    secciones.forEach(s => observerNav.observe(s));
+
+    // Animación de aparición al hacer scroll
+    const observerReveal = new IntersectionObserver((entradas) => {
+      entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add('visible');
+          observerReveal.unobserve(entrada.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => observerReveal.observe(el));
+
+    // Contadores animados de las estadísticas
+    const contadores = document.querySelectorAll('.stat__num[data-conteo]');
+    const observerContador = new IntersectionObserver((entradas) => {
+      entradas.forEach(entrada => {
+        if (!entrada.isIntersecting) return;
+        const el = entrada.target;
+        const meta = parseInt(el.dataset.conteo, 10);
+        const sufijo = el.dataset.sufijo || '';
+        const duracion = 1200;
+        const inicio = performance.now();
+        function paso(ahora) {
+          const progresoAnim = Math.min((ahora - inicio) / duracion, 1);
+          const valor = Math.floor(progresoAnim * meta);
+          el.textContent = valor + sufijo;
+          if (progresoAnim < 1) requestAnimationFrame(paso);
+          else el.textContent = meta + sufijo;
+        }
+        requestAnimationFrame(paso);
+        observerContador.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    contadores.forEach(el => observerContador.observe(el));
+  </script>
+
+</body>
+</html>
